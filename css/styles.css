@@ -51,5 +51,11 @@ footer {
     text-align: center;
 }
 
-
+/* Contact page */
+input, 
+select,
+textarea {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+}
 
