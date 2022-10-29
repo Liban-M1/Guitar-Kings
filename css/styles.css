@@ -17,6 +17,15 @@ h2,
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+header {
+  display: flex;
+  align-items: center;
+}
+
+nav{
+  margin-left: 25%;
+}
+
 nav ul {
   padding: 0px;
 }
@@ -85,12 +94,48 @@ footer {
   min-height: 70vh;
 }
 
+.selling-points {
+    margin: 50px auto;
+}
+
+.reviews_content,
+.selling-points {
+  max-width: 1000px;
+
+  display: flex;
+}
+
+.selling-points > *,
+.reviews_content > * {
+  flex: 1;
+}
+
 .selling-points__images {
   border-radius: 100px;
 }
 
+.reviews {
+  text-align: center;
+  padding: 50px;
+}
+
+.reviews_content {
+  text-align: left;
+  margin: auto;
+}
+
+.reviews_content {
+  margin: 50px;
+}
+
 .review__images {
+  width: 80px;
   border-radius: 50%;
+  float: right;
+}
+
+.reviews_name {
+  display: block;
 }
 
 /* Contact page */
@@ -101,3 +146,24 @@ textarea {
   border-radius: 5px;
 }
 
+/* Produckt Specific Page*/
+.produckt-spicific {
+  display: flex;
+  max-width: 1000;
+  margin: auto;
+}
+
+.produckt-spicific {
+  flex: 1;
+}
+
+.produckt-image {
+  width: 100%;
+}
+
+.product-image_thumbnails {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 5px;
+}
