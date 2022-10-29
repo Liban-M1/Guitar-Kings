@@ -150,11 +150,25 @@ textarea {
 .produckt-spicific {
   display: flex;
   max-width: 1000;
+  margin: 50px auto;
+}
+
+.produckt-spicific > * {
+  flex: 1;
+}
+
+.product-spicific_details {
+  padding: 0px 30px;
+}
+
+.product-spicific_details a {
+  display: block;
+  width: 95.767px;
   margin: auto;
 }
 
-.produckt-spicific {
-  flex: 1;
+.produckt-spicific_price {
+  font-size: 1.5em;
 }
 
 .produckt-image {
