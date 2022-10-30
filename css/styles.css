@@ -17,15 +17,6 @@ h2,
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
-  display: flex;
-  align-items: center;
-}
-
-nav{
-  margin-left: 25%;
-}
-
 nav ul {
   padding: 0px;
 }
@@ -92,50 +83,22 @@ footer {
   background-position-x: right;
   background-position-y: bottom;
   min-height: 70vh;
+  position: relative;
 }
 
-.selling-points {
-    margin: 50px auto;
-}
-
-.reviews_content,
-.selling-points {
-  max-width: 1000px;
-
-  display: flex;
-}
-
-.selling-points > *,
-.reviews_content > * {
-  flex: 1;
+.welcome__content {
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  left: 100px;
 }
 
 .selling-points__images {
   border-radius: 100px;
 }
 
-.reviews {
-  text-align: center;
-  padding: 50px;
-}
-
-.reviews_content {
-  text-align: left;
-  margin: auto;
-}
-
-.reviews_content {
-  margin: 50px;
-}
-
 .review__images {
-  width: 80px;
   border-radius: 50%;
-  float: right;
-}
-
-.reviews_name {
-  display: block;
 }
 
 /* Contact page */
@@ -144,40 +107,4 @@ select,
 textarea {
   border: 1px solid #c4c4c4;
   border-radius: 5px;
-}
-
-/* Produckt Specific Page*/
-.produckt-spicific {
-  display: flex;
-  max-width: 1000;
-  margin: 50px auto;
-}
-
-.produckt-spicific > * {
-  flex: 1;
-}
-
-.product-spicific_details {
-  padding: 0px 30px;
-}
-
-.product-spicific_details a {
-  display: block;
-  width: 95.767px;
-  margin: auto;
-}
-
-.produckt-spicific_price {
-  font-size: 1.5em;
-}
-
-.produckt-image {
-  width: 100%;
-}
-
-.product-image_thumbnails {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 5px;
 }
