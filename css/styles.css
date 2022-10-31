@@ -3,12 +3,12 @@
   src: url("../fonts/BootsAndSpurs.ttf") format("truetype");
 }
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="#0099ff" fill-opacity="1" d="M0,288L60,272C120,256,240,224,360,192C480,160,600,128,720,144C840,160,960,224,1080,256C1200,288,1320,288,1380,288L1440,288L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
-</svg>
-
 body {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 h1,
@@ -24,6 +24,7 @@ h2,
 header {
   display: flex;
   align-items: center;
+  margin: auto;
 }
 
 nav {
@@ -100,12 +101,21 @@ header a {
   margin: 5px;
 }
 
+.products--sale {
+  display: flex;
+}
+
+.old-price {
+  text-decoration: line-through;
+}
+
 .cta-sale {
   background-color: #127300;
 }
 
 footer {
   text-align: center;
+  padding: 20px;
 }
 
 /* Home page */
@@ -175,7 +185,7 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   max-width: 1000px;
   margin: 50px auto;
-  gap: 10px;
+  grid-gap: 10px;
 }
 
 .featured h2 {
@@ -254,7 +264,6 @@ textarea {
 }
 
 /*Guitars Page*/
-
 .guitars {
   max-width: 1000px;
   margin: auto;
